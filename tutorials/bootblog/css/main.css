@@ -1,0 +1,44 @@
+body {
+  background: url(../img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h2 {
+  color: #005f5f;
+}
+.content-wrap {
+  padding-top: 61px;
+  padding-bottom: 60px;
+}
+.page-header {
+  border-bottom: 2px solid #444;
+  padding: 0 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+.thumbnail {
+  opacity: .75;
+  cursor: pointer;
+}
+.thumbnail .caption {
+  text-transform: capitalize;
+}
+.thumbnail:hover {
+  opacity: 1;
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 45em) {
+  .carousel-caption {
+    display: none;
+  }
+}

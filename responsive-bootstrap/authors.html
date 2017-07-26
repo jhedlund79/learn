@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="utf-8">
+  		<title>Authors - PacktCMS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+		<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="js/datatables/jquery.dataTables.min.css" rel="stylesheet">
+		<link href="js/datatables/dataTables.fontAwesome.css" rel="stylesheet">
+		<link href="js/datatables/dataTables.bootstrap.min.css" rel="stylesheet">
+		<link href="js/chosen/chosen.min.css" rel="stylesheet">
+		<link href="js/validation/formValidation.min.css" rel="stylesheet">
+		<link href="js/datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="page-container">
+
+			<div class="sidebar-container">
+				<div class="logo">
+					<h3>PacktCMS</h3>
+				</div><!-- .logo -->
+
+				<div class="user-meta">
+					<div class="dropdown">
+					 	<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+					    	Jason<i class="fa fa-angle-down"></i>
+					    	<span>Administrator</span>
+					  	</button>
+					  	<ul class="dropdown-menu">
+					    	<li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+					    	<li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+					  	</ul>
+					</div><!-- .dropdown -->
+				</div><!-- .user-meta -->
+
+				<ul class="sidebar-nav">
+					<li>
+					    <a href="./dashboard.html#"><i class="fa fa-dashboard"></i> Dashboard</a>
+					</li>
+					<li>
+					    <a href="#"><i class="fa fa-book"></i> Books</a>
+					</li>
+					<li>
+					    <a href="#"><i class="fa fa-file-text-o"></i> Courses</a>
+					</li>
+					<li>
+					    <a href="#"><i class="fa fa-book"></i> Books</a>
+					</li>
+					<li>
+					    <a href="#"><i class="fa fa-video-camera"></i> Videos</a>
+					</li>
+					<li>
+					    <a href="#"><i class="fa fa-pie-chart"></i> Revenue</a>
+					</li>
+					<li class="active">
+					    <a href="#"><i class="fa fa-users"></i> Authors</a>
+					</li>
+				</ul>
+
+			</div><!-- .sidebar-container -->
+
+
+			<div class="content-container">
+
+				<div class="page-title">
+					<div class="mobile-menu">
+						<a href="#"><i class="fa fa-bars"></i></a>
+					</div><!-- .mobile-menu -->
+
+					<div class="pull-left">
+						<h3>Authors</h3>
+						<ol class="breadcrumb">
+							<li><a href="./dashboard.html#">Dashboard</a></li>
+							<li>Authors</li>
+						</ol><!-- .breadcrumb -->
+					</div><!-- .pull-left -->
+				</div><!-- .page-title -->
+
+				<div class="content-inner">
+                    <table id="authors-table" class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Name</th>
+                                <th>Surname</th>
+                                <th>E-mail</th>
+                                <th>Country</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="label label-success">Active</span>
+                                </td>
+                                <td>
+                                <a href="#" data-toggle="ajax-popover" data-title="About Jason" data-popover-content="#user-1">Jason</a>
+                                    <div class="hidden" id="user-1">
+                                        <strong>Lorem Ipsum</strong> Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to <em>make a type</em> specimen book.
+                                    </div><!-- .hidden -->
+                                </td>
+                                <td><span data-toggle="tooltip" title="Jason is awesome">Jason</span></td>
+                                <td>jhedlund79@gmail.com</td>
+                                <td>USA</td>
+                                <td>
+                                    <div class="btn-group btn-actions">
+                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Actions <i class="fa fa-angle-down"></i></button>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" data-id="101" class="show-user-modal"><i class="fa fa-file-text-o"></i>Details</a></li>
+                                            <li><a href="#"><i class="fa fa-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="fa fa-ban"></i> Ban</a></li>
+                                            <li><a href="#" data-id="42" class="confirm-user-delete"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                        </ul>
+
+                                    </div><!-- .btn-group -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="label label-danger">Active</span></td>
+                                <td>Devin</td>
+                                <td>Monroe</td>
+                                <td>Lorem@lectusNullamsuscipit.org</td>
+                                <td>Mayotte</td>
+                                <td>
+                                    <div class="btn-group btn-actions">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Actions <i class="fa fa-angle-down"></i></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                        </ul>
+                                    </div><!-- .btn-group -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="label label-success">Active</span></td>
+                                <td>Dana</td>
+                                <td>Burch</td>
+                                <td>Sed.eu@Integereulacus.co.uk</td>
+                                <td>Chad</td>
+                                <td>
+                                    <div class="btn-group btn-actions">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Actions <i class="fa fa-angle-down"></i></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                        </ul>
+                                    </div><!-- .btn-group -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="label label-success">Active</span></td>
+                                <td>Maite</td>
+                                <td>Mcdonald</td>
+                                <td>Vestibulum@sollicitudina.org</td>
+                                <td>Papua New Guinea</td>
+                                <td>
+                                    <div class="btn-group btn-actions">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Actions <i class="fa fa-angle-down"></i></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                        </ul>
+                                    </div><!-- .btn-group -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="label label-danger">Active</span></td>
+                                <td>Veda</td>
+                                <td>Campos</td>
+                                <td>nulla.magna.malesuada@nonlobortisquis.com</td>
+                                <td>Saint Barthélemy</td>
+                                <td>
+                                    <div class="btn-group btn-actions">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Actions <i class="fa fa-angle-down"></i></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                        </ul>
+                                    </div><!-- .btn-group -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="label label-success">Active</span></td>
+                                <td>Norman</td>
+                                <td>Welch</td>
+                                <td>ultricies.sem@imperdieterat.org</td>
+                                <td>Kyrgyzstan</td>
+                                <td>
+                                    <div class="btn-group btn-actions">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Actions <i class="fa fa-angle-down"></i></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                        </ul>
+                                    </div><!-- .btn-group -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="label label-success">Active</span></td>
+                                <td>Bob</td>
+                                <td>Dole</td>
+                                <td>bob.dole@gmail.com</td>
+                                <td>USA</td>
+                                <td>
+                                    <div class="btn-group btn-actions">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Actions <i class="fa fa-angle-down"></i></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                        </ul>
+                                    </div><!-- .btn-group -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="label label-danger">Active</span></td>
+                                <td>Devin</td>
+                                <td>Monroe</td>
+                                <td>Lorem@lectusNullamsuscipit.org</td>
+                                <td>Mayotte</td>
+                                <td>
+                                    <div class="btn-group btn-actions">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Actions <i class="fa fa-angle-down"></i></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                        </ul>
+                                    </div><!-- .btn-group -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="label label-success">Active</span></td>
+                                <td>Dana</td>
+                                <td>Burch</td>
+                                <td>Sed.eu@Integereulacus.co.uk</td>
+                                <td>Chad</td>
+                                <td>
+                                    <div class="btn-group btn-actions">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Actions <i class="fa fa-angle-down"></i></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                        </ul>
+                                    </div><!-- .btn-group -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="label label-success">Active</span></td>
+                                <td>Maite</td>
+                                <td>Mcdonald</td>
+                                <td>Vestibulum@sollicitudina.org</td>
+                                <td>Papua New Guinea</td>
+                                <td>
+                                    <div class="btn-group btn-actions">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Actions <i class="fa fa-angle-down"></i></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                        </ul>
+                                    </div><!-- .btn-group -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="label label-success">Active</span></td>
+                                <td>Norman</td>
+                                <td>Welch</td>
+                                <td>ultricies.sem@imperdieterat.org</td>
+                                <td>Kyrgyzstan</td>
+                                <td>
+                                    <div class="btn-group btn-actions">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Actions <i class="fa fa-angle-down"></i></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                        </ul>
+                                    </div><!-- .btn-group -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+				</div><!-- .content-inner -->
+			</div><!-- .content-container -->
+		</div><!-- .page-container -->
+
+        <div id="ajax-modal" class="modal fade"></div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/datatables/jquery.dataTables.min.js"></script>
+		<script src="js/datatables/dataTables.bootstrap.min.js"></script>
+		<!--<script src="js/chosen/chosen.jquery.min.js"></script>-->
+		<!--<script src="js/jquery.form.min.js"></script>-->
+		<!--<script src="js/validation/formValidation.min.js"></script>-->
+		<!--<script src="js/validation/bootstrap.min.js"></script>-->
+		<!--<script src="js/moment.min.js"></script>-->
+		<!--<script src="js/datepicker/bootstrap-datetimepicker.min.js"></script>-->
+		<!--<script src="js/bootbox.min.js"></script>-->
+		<script src="js/jquery.site.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$('#authors-table').dataTable({
+					'dom': "<'table-header'<'row'<'col-md-6'f>>>" +
+							"<'row'<'col-md-12'tr>>" +
+							"<'row'<'col-md-5'i><'col-md-7'p>>",
+                	'pageLength': 8,
+                	'order': [[1, 'asc']],
+                	'language': {
+						'search': '',
+						'searchPlaceholder': 'Search...'
+					},
+                	'columns': [
+	                    {
+	                    	'searchable': false,
+	                        'orderable': true,
+	                    },
+	                    {
+	                    	'searchable': true,
+	                        'orderable': true
+	                    },
+	                    {
+	                    	'searchable': true,
+	                        'orderable': true
+	                    },
+	                    {
+	                    	'searchable': false,
+	                        'orderable': true
+	                    },
+	                    {
+	                    	'searchable': false,
+	                        'orderable': true
+	                    },
+	                    {
+	                    	'searchable': false,
+	                        'orderable': false
+	                    }
+                	]
+                });
+			});
+		</script>
+
+	</body>
+</html>

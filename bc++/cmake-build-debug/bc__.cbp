@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="bc__"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bc__">
+				<Option output="/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/bc__" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 bc__"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bc__/fast">
+				<Option output="/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/bc__" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 bc__/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/bc++simplecalc/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/hello-world/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-01/new-project/src/hello_world.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-02/cmd-args/src/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-02/hello-world/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-03/calculator/src/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-03/temp-converter/src/fahrenheit_to_celcius.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-03/temp-converter/src/fahrenheit_to_celcius.h">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-03/temp-converter/src/temp-converter.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-03/temp-converter/tests/fahrenheit_celsius_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-03/temp-converter/tests/fahrenheit_to_celsius.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-03/temp-converter/tests/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-04/temp-conversion-gtest/src/temp_conversion.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-04/temp-conversion-gtest/test/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-04/temp-conversion-gtest/test/test_celsius_to_fahrenheit.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-04/temp-conversion-libunittest/src/temp_conversion.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-04/temp-conversion-libunittest/tests/celsius_to_fahrenheit_test.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-04/temp-conversion-unittest++/src/temp_conversion.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-04/temp-conversion-unittest++/tests/celsius_to_fahrenheit_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-04/temp-conversion-unittest++/tests/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-05/exercise/src/data.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-05/exercise/src/find.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-05/exercise/src/functions.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-05/exercise/src/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-05/exercise/tests/aggregate_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-05/exercise/tests/find_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-05/exercise/tests/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-06/exercise/src/data.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-06/exercise/src/find.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-06/exercise/src/functions.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-06/exercise/src/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-06/exercise/tests/find_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-06/exercise/tests/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-07/exercise/src/_model/_address.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-07/exercise/src/_model/_email_address.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-07/exercise/src/_model/_site.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-07/exercise/src/_model/_us_address.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-07/exercise/src/_model/_web_address.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-07/exercise/src/data.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-07/exercise/src/find.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-07/exercise/src/functions.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-07/exercise/src/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-07/exercise/src/model.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/src/_messaging/_message.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/src/_messaging/_message_builder.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/src/_messaging/_message_header.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/src/builder.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/src/generic_builder.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/src/int_list.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/src/list.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/src/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/src/messaging.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/tests/find_fx_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/tests/find_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/tests/generic_builder_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/tests/int_list_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/tests/list_double_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/tests/list_string_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/tests/list_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/tests/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-08/exercise/tests/template_fx_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-algorithms/src/_model/_address.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-algorithms/src/_model/_algorithm.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-algorithms/src/_model/_email_address.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-algorithms/src/_model/_site.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-algorithms/src/_model/_us_address.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-algorithms/src/_model/_web_address.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-algorithms/src/data.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-algorithms/src/find.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-algorithms/src/functions.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-algorithms/src/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-algorithms/src/model.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-containers/src/array_main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-containers/src/deque_main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-containers/src/map_main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-containers/src/queue_main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-containers/src/stack_main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-containers/src/vector_main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-containers/tests/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-09/stl-containers/tests/reverse_test.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/chap-10/exceptions/src/main.cpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/class-library/include/_fs/file_reader.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/class-library/include/file_system.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/class-library/include/string_utils.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/source_code/class-library/include/utils.hpp">
+			<Option target="bc__"/>
+		</Unit>
+		<Unit filename="/Users/jasonhedlund/workspace/courses/bc++/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

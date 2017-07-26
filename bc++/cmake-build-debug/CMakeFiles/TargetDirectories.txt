@@ -1,0 +1,3 @@
+/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jasonhedlund/workspace/courses/bc++/cmake-build-debug/CMakeFiles/bc__.dir
