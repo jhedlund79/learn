@@ -27,9 +27,7 @@ func lengthOfLongestSubstring(s string) int {
 	index := [128]int{}
 	var i, j, ans int
 	for j = 0; j < len(s); j++ {
-		fmt.Println("comparing for i: ", float64(index[s[j]]), ":", float64(i))
 		i = int(math.Max(float64(index[s[j]]), float64(i)))
-		fmt.Println("comparing for ans: ", float64(ans), ":", float64(j-i+1))
 		ans = int(math.Max(float64(ans), float64(j-i+1)))
 		index[s[j]] = j + 1
 	}
