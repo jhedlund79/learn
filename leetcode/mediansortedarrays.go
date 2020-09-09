@@ -42,16 +42,6 @@ import "fmt"
 // 0 <= m <= 1000
 // 0 <= n <= 1000
 // 1 <= m + n <= 2000
-func mergeSlices(nums1, nums2 []int) []int {
-	if nums1 == nil || len(nums1) == 0 {
-		return nums2
-	}
-	if nums2 == nil || len(nums2) == 0 {
-		return nums1
-	}
-	return append(nums1, nums2...)
-}
-
 func sortSlices(nums []int) []int {
 	for i := 1; i < len(nums); i++ {
 		for j := 0; j < i; j++ {
@@ -64,7 +54,7 @@ func sortSlices(nums []int) []int {
 }
 
 func findMedianSortedArrays(nums1, nums2 []int) float64 {
-	merged := mergeSlices(nums1, nums2)
+	merged := append(nums1, nums2...)
 	sorted := sortSlices(merged)
 	if len(merged) == 1 {
 		return float64(sorted[0])
@@ -82,6 +72,7 @@ func main() {
 	fmt.Println(findMedianSortedArrays([]int{1, 2, 3, 5, 6}, []int{4, 7, 8, 9, 10}))
 	fmt.Println(findMedianSortedArrays([]int{1, 3}, []int{2}))
 	fmt.Println(findMedianSortedArrays([]int{}, []int{2}))
+	fmt.Println(findMedianSortedArrays(nil, []int{2}))
 	fmt.Println(findMedianSortedArrays([]int{1, 2}, []int{3, 4}))
 	fmt.Println(findMedianSortedArrays([]int{}, []int{1}))
 	fmt.Println(findMedianSortedArrays([]int{3}, []int{-2, -1}))
