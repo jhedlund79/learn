@@ -1,8 +1,7 @@
 package main
 
-import (
-	"fmt"
-)
+import "C"
+import "fmt"
 
 // 23. Merge k Sorted Lists
 // Hard
@@ -48,49 +47,45 @@ type ListNode struct {
 }
 
 func mergeKLists(lists []*ListNode) *ListNode {
-	if lists == nil || len(lists) == 0 {
-		return &ListNode{}
+	if len(lists) == 0 {
+		return nil
 	}
-	// start at the second list
-	for i := 1; i <= len(lists)-1; i++ {
-		for {
-			headAtZero, headAtI := lists[0], lists[i]
-			// if the head at i is nil break
-			if headAtI == nil {
-				break
-			}
-			if headAtZero == nil {
-				return headAtI
-			}
+	vals := []int{}
+	// grab all the values out of the nodes
+	for _, list := range lists {
+		if list == nil {
+			continue
+		}
+		curr := list
+		for curr.Next != nil {
+			vals = append(vals, curr.Val)
+			curr = curr.Next
+		}
+		if curr.Next == nil {
+			vals = append(vals, curr.Val)
+		}
+	}
 
-			// compare heads values and swap if first is greater
-			if headAtZero.Val >= headAtI.Val {
-				lists[i] = headAtI.Next
-				headAtI.Next = headAtZero
-				lists[0] = headAtI
-			} else {
-				// traverse the first list
-				for headAtZero.Next != nil {
-					if headAtZero.Next.Val > headAtI.Val {
-						lists[i] = headAtI.Next
-						headAtI.Next = headAtZero.Next
-						headAtZero.Next = headAtI
-						break
-					}
-					headAtZero = headAtZero.Next
-
-					if headAtZero.Next == nil {
-						lists[i] = headAtI.Next
-						headAtI.Next = nil
-						headAtZero.Next = headAtI
-						headAtZero.Next.Next = nil
-						break
-					}
-				}
+	// sort the values
+	for i := 1; i < len(vals); i++ {
+		for j := 0; j < i; j++ {
+			if vals[j] > vals[i] {
+				vals[j], vals[i] = vals[i], vals[j]
 			}
 		}
 	}
-	return lists[0]
+
+	// construct new nodes in a linked list
+	var head *ListNode
+	if len(vals) > 0 {
+		head = &ListNode{Val: vals[0]}
+		curr := head
+		for i := 1; i < len(vals); i++ {
+			curr.Next = &ListNode{Val: vals[i]}
+			curr = curr.Next
+		}
+	}
+	return head
 }
 
 // Print traverse the linked list and print each element
@@ -98,37 +93,48 @@ func (node *ListNode) Print() {
 	for ; node != nil; node = node.Next {
 		fmt.Println(node.Val)
 	}
+	fmt.Println()
 }
 
 func main() {
-	// y := &ListNode{Val: 8}
-	// x := &ListNode{Val: 7, Next: y}
-	//
-	// b := &ListNode{Val: 4, Next: x}
-	//
-	// a := &ListNode{Val: 3, Next: b}
-	//
-	// d := &ListNode{Val: 2}
-	// c := &ListNode{Val: 1, Next: d}
-	//
-	// f := &ListNode{Val: 6}
-	// e := &ListNode{Val: 5, Next: f}
-	// arr := []*ListNode{a, c, e}
-	// val := mergeKLists(arr)
-	// val.Print()
-	//
-	// arr = []*ListNode{}
-	// val = mergeKLists(arr)
-	// val.Print()
-	//
-	// f = &ListNode{Val: 6}
-	// arr = []*ListNode{nil, f}
-	// val = mergeKLists(arr)
-	// val.Print()
-	//TODO case not working
-	f := &ListNode{Val: 1}
-	g := &ListNode{Val: 0}
-	arr := []*ListNode{g, f}
+	y := &ListNode{Val: 8}
+	x := &ListNode{Val: 7, Next: y}
+
+	b := &ListNode{Val: 4, Next: x}
+
+	a := &ListNode{Val: 3, Next: b}
+
+	d := &ListNode{Val: 2}
+	c := &ListNode{Val: 1, Next: d}
+
+	f := &ListNode{Val: 6}
+	e := &ListNode{Val: 5, Next: f}
+	arr := []*ListNode{a, c, e}
 	val := mergeKLists(arr)
+	val.Print()
+
+	fmt.Println("empty list")
+	arr = []*ListNode{}
+	val = mergeKLists(arr)
+	val.Print()
+
+	fmt.Println("nil list")
+	f = &ListNode{Val: 6}
+	arr = []*ListNode{nil, f}
+	val = mergeKLists(arr)
+	val.Print()
+
+	fmt.Println("one empty list")
+	f = &ListNode{Val: 1}
+	arr = []*ListNode{&ListNode{}, f}
+
+	val = mergeKLists(arr)
+	val.Print()
+
+	fmt.Println("list with zero value")
+	f = &ListNode{Val: 1}
+	g := &ListNode{Val: 0}
+	arr = []*ListNode{g, f}
+	val = mergeKLists(arr)
 	val.Print()
 }

@@ -11,14 +11,14 @@ package main
 // Because nums[0] + nums[1] = 2 + 7 = 9,
 // return [0, 1].
 func twoSum(nums []int, target int) []int {
+	m := map[int]int{}
 	for i := range nums {
-		for j := i + 1; j < len(nums); j++ {
-			if nums[i]+nums[j] == target {
-				return []int{i, j}
-			}
+		c := target - nums[i]
+		if v, ok := m[c]; ok {
+			return []int{v, i}
 		}
+		m[nums[i]] = i
 	}
-
 	return nil
 }
 
