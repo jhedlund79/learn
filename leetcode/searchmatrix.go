@@ -11,7 +11,7 @@ func searchMatrix(matrix [][]int, target int) bool {
 	// n is the number of cols
 	n := len(matrix[0])
 	j := 0
-	for i >= 0 && j < n {
+	for i >= 0 && j < n { // indexes set to start from bottom left element
 		if matrix[i][j] == target {
 			return true
 		}

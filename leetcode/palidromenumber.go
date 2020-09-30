@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 //
 // Example 1:
@@ -30,5 +32,6 @@ func isPalindrome(x int) bool {
 }
 
 func main() {
-
+	fmt.Println(isPalindrome(1001))
+	fmt.Println(isPalindrome(2020))
 }
