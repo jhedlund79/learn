@@ -15,9 +15,7 @@ import "fmt"
 func twoSum(nums []int, target int) []int {
 	m := map[int]int{}
 	for i := range nums {
-		fmt.Println(target, nums[i])
 		c := target - nums[i]
-		fmt.Println(c)
 		if v, ok := m[c]; ok {
 			return []int{v, i}
 		}

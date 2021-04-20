@@ -13,4 +13,5 @@ func reverseString(s []byte) {
 
 func main() {
 	reverseString([]byte(`hello`))
+	reverseString([]byte(`hello there`))
 }
