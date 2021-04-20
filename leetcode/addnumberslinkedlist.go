@@ -30,11 +30,13 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 			x = 0
 		} else {
 			x = l1.Val
+			l1 = l1.Next
 		}
 		if l2 == nil {
 			y = 0
 		} else {
 			y = l2.Val
+			l2 = l2.Next
 		}
 
 		v := carry + x + y
@@ -45,16 +47,9 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 			curr.Next = &ListNode{Val: carry}
 		}
 		arr = append(arr, curr)
-		if l1 != nil {
-			l1 = l1.Next
-		}
-		if l2 != nil {
-			l2 = l2.Next
-		}
 	}
 	return arr[0]
 }
-
 func main() {
 	c := &ListNode{Val: 3}
 	b := &ListNode{Val: 4, Next: c}
@@ -65,19 +60,19 @@ func main() {
 	val := addTwoNumbers(a, x)
 	spew.Dump("val: ", val)
 
-	y1 := &ListNode{Val: 5}
-	x1 := &ListNode{Val: 5, Next: y1}
-	val1 := addTwoNumbers(x1, y1)
-	spew.Dump("val: ", val1)
-
-	y2 := &ListNode{Val: 9}
-	x2 := &ListNode{Val: 9, Next: y1}
-	val2 := addTwoNumbers(x2, y2)
-	spew.Dump("val: ", val2)
-
-	y3 := &ListNode{Val: 0}
-	x4 := &ListNode{Val: 8}
-	x3 := &ListNode{Val: 1, Next: x4}
-	val3 := addTwoNumbers(x3, y3)
-	spew.Dump("val: ", val3)
+	//y1 := &ListNode{Val: 5}
+	//x1 := &ListNode{Val: 5, Next: y1}
+	//val1 := addTwoNumbers(x1, y1)
+	//spew.Dump("val: ", val1)
+	//
+	//y2 := &ListNode{Val: 9}
+	//x2 := &ListNode{Val: 9, Next: y1}
+	//val2 := addTwoNumbers(x2, y2)
+	//spew.Dump("val: ", val2)
+	//
+	//y3 := &ListNode{Val: 0}
+	//x4 := &ListNode{Val: 8}
+	//x3 := &ListNode{Val: 1, Next: x4}
+	//val3 := addTwoNumbers(x3, y3)
+	//spew.Dump("val: ", val3)
 }
