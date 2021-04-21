@@ -56,19 +56,21 @@ func Solution(S string) int {
 	for _, c := range S {
 		if c == '(' || c == '{' || c == '[' {
 			st.push(c)
-
+			continue
 		}
 		if st.empty() {
 			return 0
 		}
 		top := st.peek()
+
 		if c == ')' && top == '(' ||
 			c == '}' && top == '{' ||
 			c == ']' && top == '[' {
 			st.pop()
+		} else {
+			return 0
 		}
 	}
-
 	if st.empty() {
 		return 1
 	}
@@ -76,11 +78,14 @@ func Solution(S string) int {
 }
 
 func main() {
-
+	//
 	fmt.Println(Solution("((((()))))"))
 	fmt.Println(Solution("(()(())())"))
 	fmt.Println(Solution("(()(())())"))
 	fmt.Println(Solution("(()(()())"))
 	fmt.Println(Solution("{{}}()[()]"))
 	fmt.Println(Solution("{][}"))
+	fmt.Println(Solution("{]}"))
+	fmt.Println(Solution("(])"))
+	fmt.Println(Solution("()"))
 }
